@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 
 variable "prefix" {
-  default = "tf-pipeline"
+  default = "tf-pipeline-demo"
 }
 
 # Create a resource group
