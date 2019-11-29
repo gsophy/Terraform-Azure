@@ -21,6 +21,7 @@ resource "azurerm_virtual_network" "app-vnet" {
   address_space       = ["10.0.0.0/16"]
 }
 
+## added text
 # Creates a subnet named "Internal" that attaches to the resource group and vNet.  Also assigns an address space for the subnet.
 resource "azurerm_subnet" "internal" {
   name                 = "${var.prefix}-internal"
