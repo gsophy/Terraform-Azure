@@ -2,7 +2,7 @@
 provider "azurerm" {
   version = "=1.34.0"
 }
-
+# Define the prefix for all resource naming
 variable "prefix" {
   default = "application-XXX"
 }
