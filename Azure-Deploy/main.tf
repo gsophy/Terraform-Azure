@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 
 variable "prefix" {
-  default = "terraform-demo"
+  default = "application-XXX"
 }
 
 # Create a resource group
