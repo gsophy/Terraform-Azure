@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 # Define the prefix for all resource naming
 variable "prefix" {
-  default = "application-XXX"
+  default = "application-123"
 }
 
 # Create a resource group
