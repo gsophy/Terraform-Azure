@@ -20,7 +20,7 @@ terraform {
 
     # rather than defining this inline, the Access Key can also be sourced
     # from an Environment Variable - more information is available below.
-    access_key = "${var.access_key}"
+    access_key = ""
   }
 }
 # Create a resource group
