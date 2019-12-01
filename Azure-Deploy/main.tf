@@ -6,7 +6,18 @@ provider "azurerm" {
 variable "prefix" {
   default = "app-chuckleberry"
 }
+#Define the remote state backend
+terraform {
+  backend "azurerm" {
+    storage_account_name = "gsophyremotestate"
+    container_name       = "tf-state-container"
+    key                  = "prod.terraform.tfstate"
 
+    # rather than defining this inline, the Access Key can also be sourced
+    # from an Environment Variable - more information is available below.
+    access_key = ""
+  }
+}
 # Create a resource group
 resource "azurerm_resource_group" "app-rg" {
   name     = "${var.prefix}-resourcegroup"
