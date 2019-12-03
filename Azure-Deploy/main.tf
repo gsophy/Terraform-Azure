@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 # Define the prefix for all resource naming
 variable "prefix" {
-  default = "app-chuckleberry"
+  default = "app-dss-lnl-demo"
 }
 
 variable "access_key" {
