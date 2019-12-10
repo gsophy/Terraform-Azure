@@ -1,7 +1,7 @@
 # Define the prefix for all resource naming
 variable "prefix" {
   description = "The application prefix that will be prepended to all created resources"
-  default = "default"
+  default = "dss-demo"
 }
 
 variable "administrator_login" {

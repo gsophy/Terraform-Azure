@@ -12,7 +12,7 @@ terraform {
   backend "azurerm" {
     storage_account_name = "gsophyremotestate"
     container_name       = "tf-state-container"
-    key                  = "dsslnl.terraform.tfstate"
+    key                  = "azure-3-demo.terraform.tfstate"
 
     # rather than defining this inline, the Access Key can also be sourced
     # from an Environment Variable - more information is available below.
