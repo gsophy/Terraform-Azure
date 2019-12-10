@@ -3,9 +3,9 @@ provider "azurerm" {
   version = "=1.34.0"
 }
 
-# variable "access_key" {
-#   # default = "${var.access_key}"
-# }
+variable "access_key" {
+  # default = "${var.access_key}"
+}
 
 #Define the remote state backend
 terraform {
