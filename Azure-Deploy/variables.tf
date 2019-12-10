@@ -5,7 +5,7 @@ variable "prefix" {
 }
 
 variable "administrator_login" {
-  default = "admin"
+  default = "defaultadminaccount"
   description = "The SQL Server admin login username"
 }
 
